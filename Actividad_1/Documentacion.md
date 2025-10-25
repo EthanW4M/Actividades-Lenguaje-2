@@ -208,11 +208,11 @@
 
 ## Documentacion de las relaciones.
 
-            relacion              |             tipo         |                 justificacion                                          |
-------------------------------------------------------------------------------------------------------------------------------------- |
-| Paciente – Historial            | 1:1                      | Cada paciente tiene solo un historial clínico único.                            |                          |
-| Paciente – Consulta – Médico    | 1:N y N:1                | Un paciente puede tener varias consultas; una consulta la realiza solo un médico.                           |                          |
-| Consulta – Reporte              | N:N                      | Una consulta puede aparecer en varios reportes (diario/semanal) y un reporte contiene múltiples consultas.     |                          |
-| Paciente – Vacuna – Enfermero   | N:N con tabla asociativa | Un paciente puede recibir varias vacunas; cada vacuna puede aplicarse a muchos pacientes; y debe registrarse qué enfermero la aplicó.       |
-| Paciente – Enfermero (registro) | N:N                      | Distintos enfermeros pueden registrar pacientes en diferentes días.                             |                          |
+| Relación                        | Tipo                     | Justificación                                                                                                                         |
+| ------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Paciente – Historial            | 1:1                      | Cada paciente tiene solo un historial clínico único.                                                                                  |
+| Paciente – Consulta – Médico    | 1:N y N:1                | Un paciente puede tener varias consultas; una consulta la realiza solo un médico.                                                     |
+| Consulta – Reporte              | N:N                      | Una consulta puede aparecer en varios reportes (diario/semanal) y un reporte contiene múltiples consultas.                            |
+| Paciente – Vacuna – Enfermero   | N:N con tabla asociativa | Un paciente puede recibir varias vacunas; cada vacuna puede aplicarse a muchos pacientes; y debe registrarse qué enfermero la aplicó. |
+| Paciente – Enfermero (registro) | N:N                      | Distintos enfermeros pueden registrar pacientes en diferentes días.                                                                   |
 | Documentos polimórficos         | Polimórfica              | Permite almacenar archivos vinculados a diferentes entidades sin repetir tablas.                                                      |
