@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ambulatorio CPTII Mocundo — Landing</title>
+
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Centro Ambulatorio CPTII Mocundo</h1>
+      <p>Atención primaria y vacunación — Salud para la comunidad</p>
+    </div>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#login">Acceso</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- LAYOUT PRINCIPAL: main + sidebar -->
+  <main id="inicio">
+    <section aria-labelledby="hero-title">
+      <h2 id="hero-title">Bienvenido al Ambulatorio</h2>
+      <p>Ofrecemos atención médica básica, seguimiento de historiales, y campañas de vacunación.</p>
+    </section>
+
+    <!-- SECCIÓN: Carrusel de imágenes -->
+    <section aria-labelledby="carrusel-title">
+      <h2 id="carrusel-title">Galería</h2>
+
+      <figure id="slide-1">
+        <img src="img/fachada.jpg" alt="Fachada del ambulatorio" width="600" />
+        <figcaption>Fachada del centro ambulatorio.</figcaption>
+        <p>
+          <a href="#slide-3">« Anterior</a> |
+          <a href="#slide-2">Siguiente »</a>
+        </p>
+      </figure>
+
+      <figure id="slide-2">
+        <img src="img/consulta.jpg" alt="Consulta médica" width="600" />
+        <figcaption>Consulta médica en progreso.</figcaption>
+        <p>
+          <a href="#slide-1">« Anterior</a> |
+          <a href="#slide-3">Siguiente »</a>
+        </p>
+      </figure>
+
+      <figure id="slide-3">
+        <img src="img/vacunacion.jpg" alt="Vacunación" width="600" />
+        <figcaption>Vacunación.</figcaption>
+        <p>
+          <a href="#slide-2">« Anterior</a> |
+          <a href="#slide-1">Siguiente »</a>
+        </p>
+      </figure>
+    </section>
+
+    <!-- SECCIÓN: Servicios (listas y subtítulos) -->
+    <section id="servicios" aria-labelledby="servicios-title">
+      <h2 id="servicios-title">Servicios</h2>
+      <h3>Atención y procesos</h3>
+      <ul>
+        <li>Registro y triage en recepción</li>
+        <li>Consultas médicas</li>
+        <li>Vacunación y seguimiento</li>
+        <li>Generación de reportes</li>
+      </ul>
+
+      <h3>Horarios</h3>
+      <p>Atención: Lunes a Viernes de 7:00 a 17:00. Guardias rotativas.</p>
+    </section>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside aria-label="Barra lateral">
+    <section>
+      <h3>Accesos rápidos</h3>
+      <ul>
+        <li><a href="#servicios">Ver Servicios</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Redes</h3>
+      <ul>
+        <li><a href="https://facebook.example" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://twitter.example" target="_blank" rel="noopener">Twitter</a></li>
+      </ul>
+    </section>
+  </aside>
+
+  <!-- LOGIN & REGISTRO (en la misma página como ejemplo) -->
+  <section id="login" aria-labelledby="login-title">
+    <h2 id="login-title">Acceso al sistema</h2>
+
+    <!-- Login -->
+    <form action="#" method="post" aria-label="Formulario de inicio de sesión">
+      <fieldset>
+        <legend>Iniciar sesión</legend>
+        <div>
+          <label for="user-email">Correo</label>
+          <input id="user-email" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="user-pass">Contraseña</label>
+          <input id="user-pass" name="password" type="password" required />
+        </div>
+        <div>
+          <button type="submit">Entrar</button>
+          <a href="#registro">Registrarse</a>
+        </div>
+      </fieldset>
+    </form>
+
+    <!-- Registro -->
+    <form id="registro" action="#" method="post" aria-label="Formulario de registro">
+      <fieldset>
+        <legend>Registro de nuevo usuario</legend>
+        <div>
+          <label for="reg-nombre">Nombre</label>
+          <input id="reg-nombre" name="nombre" type="text" />
+        </div>
+        <div>
+          <label for="reg-apellido">Apellido</label>
+          <input id="reg-apellido" name="apellido" type="text" />
+        </div>
+        <div>
+          <label for="reg-email">Correo</label>
+          <input id="reg-email" name="email" type="email" />
+        </div>
+        <div>
+          <label for="reg-role">Tipo de usuario</label>
+          <select id="reg-role" name="role">
+            <option value="enfermero">Enfermero</option>
+            <option value="medico">Médico</option>
+          </select>
+        </div>
+        <div>
+          <label for="reg-pass">Contraseña</label>
+          <input id="reg-pass" name="password" type="password" />
+        </div>
+        <div>
+          <button type="submit">Crear cuenta</button>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <h4>Ambulatorio CPTII Mocundo</h4>
+      <p>© 2025 — Atención primaria. Todos los derechos reservados.</p>
+    </div>
+    <div>
+      <nav aria-label="Enlaces del pie de página">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
